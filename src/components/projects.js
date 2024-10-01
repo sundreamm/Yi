@@ -9,13 +9,19 @@ const data = [
             description:'2024.09-present',
             content:'I assisted my supervisor in maintaining the academic conference website using WordPress.'
 
+        },
+    
+
+        {title:'Personal Website',
+            description:'2024.09',
+            content:'A personal website using React and Ant Design, which is well-designed and responsive.'
         }
     ,
     
 
         {title:'Shenzhen SF technology Co., Ltd, China',
             description:'2019-2022',
-            content:'Developed the Product Life-cycle Management Workbench to manage the product strategy, scheme, product listing, performance, and removal. Utilized Vue Bucket, ElementUI, Axios, and Echarts technology stack to support operational decision-making with visualized data monitoring and intelligent data recommendation.'
+            content:'Developed the Product Life-cycle Management Workbench to manage the product strategy, scheme, product listing, performance, and removal. Utilized Vue Bucket, ElementUI, Axios, and Echarts technology stack to support operational decision-making with visualized data monitoring and intelligent data recommendation.  '
         }
     
 ];
@@ -27,13 +33,13 @@ const Projects = () => (
   <Col xs={0} sm={2} md={4} lg={6} xl={7}>
   </Col>
       <Col xs={24} sm={24} md={20} lg={18} xl={10}>
-    <Divider orientation="left">Projects</Divider>
+    <Divider className='listTitle' orientation="left">Projects</Divider>
     <List  className='listItem'
       header={<div></div>}
     //   footer={<div>Footer</div>}
       bordered
       dataSource={data}
-      renderItem={(item) => (
+      renderItem={(item,index) => (
         <List.Item>
         <List.Item.Meta
         //   avatar={<Avatar src={`https://api.dicebear.com/7.x/miniavs/svg?seed=${index}`} />}
@@ -41,6 +47,7 @@ const Projects = () => (
           description={item.description}
            />
          {item.content}
+         {index === 2 && <p>Responsible for developing and maintaining the internal component library.</p>}
       </List.Item>
       )}
     />

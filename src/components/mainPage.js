@@ -20,7 +20,6 @@ const MainPage = () => {
     <p className='descrip'> <b>Master</b> of Engineering (M. Eng), Electrical Engineering,</p>
         <p className='descrip'>in Memorial University of Newfoundland</p>
         <p className='descrip'>4 years of experience as a <b>Front-End Developer</b></p>
-        <p className='descrip'>Bachelor in Automation, Wuhan University of Technology </p>
 </div>
 <div className='cardItem about'>
     

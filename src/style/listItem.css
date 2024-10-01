@@ -1,10 +1,23 @@
+.listTitle{
+    padding: 20px 0;
+    background: rgba(255, 255, 255, 0.9); /* 半透明白色背景 */
+    border-radius: 10px;
+span{
+    padding-inline: 0!important;
+    font-size: 30px;}
+}
 .listItem{
+    
+    background: rgba(255, 255, 255, 0.9); /* 半透明白色背景 */
     li{
         text-align: left;
+        font-size: 1.1rem;
+    }
+    h4{
+        font-size: 1.3rem!important;
     }
     /* text-align: left; */
     .itemName{
-        font-size: 15px;
         font-weight: bold;
     }
     /* p{
