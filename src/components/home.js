@@ -7,7 +7,7 @@ const Home = () => {
     return <div>
         
         <MainPage />
-        <Card />
+        {/* <Card /> */}
    </div>
     // return <div>111</div>
   

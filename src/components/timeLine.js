@@ -27,7 +27,7 @@ const TimeLine = () => {
           },
           {
             label: '2019 - 2022',
-            children: 'Worked at Shenzhen Tobo Software Co., Ltd, China as a Front-End Developer.',
+            children: 'Worked at SF technology as a Front-End Developer.',
           },
           {
             label: '2022.9~present',

@@ -1,11 +1,59 @@
 import React from 'react';
 import me from '../imgs/banner.png'
+import bg from '../imgs/bg6.png'
 import '../style/mainPage.css'; // 从 components 目录跳到上一级再进入 style 目录
+import { Link } from 'react-router-dom';
+import { Card, Col, Row,Divider } from 'antd';
 
 const MainPage = () => {
     
     return <div className='profileContainer'>
-        <img src={me} alt='me'></img>
+        <div className='bg'></div>
+        <div class="overlay"></div>
+<div className='cardItem profile'>
+    <h1>Yi Li</h1>
+    <p> <b>Master</b> of Engineering (M. Eng), Electrical Engineering,</p>
+        <p>in Memorial University of Newfoundland</p>
+        <p>4 years of experience as a <b>Front-End Developer</b></p>
+        <p>Bachelor in Automation, Wuhan University of Technology </p>
+</div>
+<div className='cardItem about'>
+    
+    <h1>About Me</h1>
+    <p>
+        Experience
+    </p>
+    <p>
+        Academic performance
+    </p>
+    <p>
+        Activities
+    </p>
+    <Link to="/aboutMe">
+    <button>Read More</button>
+    </Link>
+</div>
+<div className='cardItem card2'>
+    <div className='project'>
+    <h1>Project</h1>
+    <Link to="/Projects">
+    <button>Read More</button>
+    </Link>
+    </div>
+    <Divider
+        variant="dashed"
+        style={{
+          borderColor: 'rgb(158, 158, 153,0.4)',
+        }}
+      >
+      </Divider>
+    <h1>Skills</h1>
+    <Link to="/Skills">
+    <button>Read More</button>
+    </Link>
+</div>
+        {/* <img src={bg} alt='bg'></img> */}
+
    </div>
     // return <div>111</div>
   

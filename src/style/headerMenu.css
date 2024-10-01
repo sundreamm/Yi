@@ -1,0 +1,16 @@
+.headerMenu{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000; /* 确保Header在其他元素之上 */
+    background-color: #fff; /* 可以设置背景颜色，防止内容在滚动时穿透Header */
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.3); /* 可选: 添加一点阴影来突出Header */
+    padding-bottom: 10px;
+    li{
+        margin-right: 10px;
+    }
+    a{
+        font-weight: bold;
+        font-size: 20px;
+    }
+}

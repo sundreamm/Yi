@@ -2,7 +2,8 @@ import React from 'react';
 import TimeLine from './timeLine';
 import Graduate from './graduate';
 import Volunteers from './Volunteers';
-import { Collapse } from 'antd';
+import { Collapse,Col, Row, } from 'antd';
+import Header from './Header';
 import "../style/aboutMe.css"
 
 const items = [
@@ -26,10 +27,21 @@ const AboutMe = () => {
     const onChange = (key) => {
         console.log(key);
       };
-    return <div className='aboutMe'>  
-        <Collapse items={items} defaultActiveKey={['1','2','3']} onChange={onChange} />;
-        
-   </div>
+    return <div>
+      <Header></Header>
+      <div className='main'>
+      <Row gutter={24}>
+    <Col xs={0} sm={2} md={4} lg={6} xl={8}>
+    </Col>
+      <Col xs={24} sm={24} md={20} lg={18} xl={10}>
+        <div className='aboutMe'>  
+            <Collapse items={items} defaultActiveKey={['1','2','3']} onChange={onChange} />;
+            
+      </div>
+   </Col>
+   <Col xs={0} sm={2} md={4} lg={6} xl={8}>
+   </Col>
+   </Row></div></div>
     // return <div>111</div>
   
 }

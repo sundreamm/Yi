@@ -3,17 +3,38 @@
     text-align: left;
 
 .academicResult{
-    text-align: left;
+    /* text-align: left; */
     img{
     /* height: 150px; */
     max-width: 100%;
     }
     
 }
+.honor{
+    img{
+        max-width: 100%;
+    }
+}
+
 .Certifications{
     img{
-        height: 450px;
         max-width: 100%;
     }
 }
 }
+@media screen and (min-width: 768px) {
+    /* 桌面端样式 */
+    .academicResult img {
+      height: 150px; /* 在桌面端占据屏幕高度的1/3 */
+      width: auto;  /* 自动根据高度调整宽度，保持比例 */
+    }
+  }
+  @media screen and (min-width: 880px) {
+      /* 桌面端样式 */
+      .Certifications img {
+        height: 450px;
+        /* height: 150px; 在桌面端占据屏幕高度的1/3 */
+        width: auto;  /* 自动根据高度调整宽度，保持比例 */
+      }
+    }
+    

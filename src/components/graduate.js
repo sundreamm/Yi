@@ -1,24 +1,41 @@
 import React from 'react';
 import '../style/graduate.css'
 import academic from '../imgs/Academic.jpg'
+import fellow from '../imgs/fellow.png'
 import PSDP from '../imgs/PSDP.jpg'
+import { Divider } from 'antd';
 
 const Graduate = () => {
     
     return <div className='graduate'>
-        <div>
+        <div className='honor'>
             <h1>Honors</h1>
             <p>
             Fellow of the School of Graduate Studies 2023-2024
             </p>
+            <img src={fellow} alt='fellow'></img>
         </div>
         
+    <Divider
+        variant="dotted"
+        style={{
+          borderColor: '#7cb305',
+        }}
+      >
+      </Divider>
         <div className='academicResult'>
         <h1>
             Academic performance
         </h1>
         <img src={academic} alt='academic performance'></img>
         </div>
+    <Divider
+        variant="dotted"
+        style={{
+          borderColor: '#7cb305',
+        }}
+      >
+      </Divider>
         <h1>Publications</h1>
         <p>
         [1] Yi Li and Weimin Huang, “Assessment of Factors Influencing the Accuracy of Ocean Current Measurement by Shipborne Marine X-Band Radar”, IEEE NECEC Conference, St. John's, Canada, 2023.
@@ -34,6 +51,13 @@ const Graduate = () => {
          [4] Yi Li, Zhiding Yang and Weimin Huang, “An Improved PCS Algorithm for Ocean Current Retrieval From X-Band Radar”, Remote Sens.,2024. （The manuscript is currently under review.）
        
         </p>
+    <Divider
+        variant="dotted"
+        style={{
+          borderColor: '#7cb305',
+        }}
+      >
+      </Divider>
         <div className='Certifications'>
             <h1>Certifications</h1>
             <img src={PSDP} alt='PSDP'></img>
