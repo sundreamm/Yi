@@ -7,7 +7,7 @@ const Skills = () => (
       <Header></Header>
       <div className='main'>
   <Row gutter={24}>
-    <Col xs={0} sm={2} md={4} lg={6} xl={8}>
+    <Col xs={0} sm={2} md={4} lg={6} xl={7}>
     </Col>
     <Col  xs={24} sm={24} md={20} lg={18} xl={10}>
     <Row>
@@ -52,7 +52,7 @@ const Skills = () => (
       </Col>
     </Row>
   </Col>
-    <Col xs={0} sm={2} md={4} lg={6} xl={8}>
+    <Col xs={0} sm={2} md={4} lg={6} xl={7}>
     </Col>
   </Row></div></div>
 );

@@ -1,3 +1,39 @@
 .main{
     padding-top: 60px;
+    font-size: 16px;
 }
+.main::after {
+    content: "";
+    background-size: cover;
+    background-position:  center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100vh;
+    width: 100%;
+    /*width: 500px;  根据图片宽度调整 */
+   background-image: url('../imgs/bg2.jpg'); /* 替换为你的背景图片路径
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.9; /* 设置透明度 */
+    z-index: -100; /* 确保背景图在其他内容后面 */
+  }
+  /* .main::before {
+    content: "";
+    background-size: cover;
+    background-position: left center;
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 500px; /* 根据图片宽度调整 */
+    /* z-index: -1;
+   background-image: url('../imgs/bg.jpg'); /* 替换为你的背景图片路径 */
+    /* background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.9; 设置透明度 */
+    /* z-index: -100; /* 确保背景图在其他内容后面 */
+  /* } */ 

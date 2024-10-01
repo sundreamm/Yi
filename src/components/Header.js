@@ -60,7 +60,7 @@ const Header = () => {
 
     // useEffect to update the current state when the location changes
     useEffect(() => {
-      if (location.pathname === '/aboutMe') {
+      if (location.pathname === '/AboutMe') {
         console.log('aboutMe');
         setCurrent('aboutMe');
       } else if (location.pathname === '/Projects') {
@@ -79,13 +79,13 @@ const Header = () => {
 
   return <div className='headerMenu'>
   <Row gutter={24}>
-   <Col xs={0} sm={2} md={4} lg={6} xl={8}>
+   <Col xs={0} sm={2} md={4} lg={6} xl={7}>
    </Col>
    <Col xs={24} sm={24} md={20} lg={18} xl={10}>
     <Menu onClick={onClick} selectedKeys={[current]} mode="horizontal" items={items}></Menu>
   </Col>
     </Row>
-  <Col xs={0} sm={2} md={4} lg={6} xl={8}>
+  <Col xs={0} sm={2} md={4} lg={6} xl={7}>
    </Col>
     </div>
   // <row gutter={24}>

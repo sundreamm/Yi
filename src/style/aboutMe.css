@@ -1,6 +1,20 @@
-
+.aboutMe{
+    text-align: left;
+}
 .ant-collapse-header{
+    text-align: center;
     font-size: 20px;
+    background-color: #000;
     color: #D2B48C!important;
     font-weight: bold;
+    
 }
+.ant-menu-item-selected{
+    color: #D2B48C!important;
+}
+li:hover.ant-menu-item-selected::after{
+    
+    border-bottom-color: #D2B48C!important;
+}
+.ant-menu-item-selected::after{
+    border-bottom-color: #D2B48C!important;}

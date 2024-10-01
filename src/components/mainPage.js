@@ -1,5 +1,5 @@
 import React from 'react';
-import me from '../imgs/banner.png'
+import me from '../imgs/me2.png'
 import bg from '../imgs/bg6.png'
 import '../style/mainPage.css'; // 从 components 目录跳到上一级再进入 style 目录
 import { Link } from 'react-router-dom';
@@ -11,11 +11,16 @@ const MainPage = () => {
         <div className='bg'></div>
         <div class="overlay"></div>
 <div className='cardItem profile'>
-    <h1>Yi Li</h1>
-    <p> <b>Master</b> of Engineering (M. Eng), Electrical Engineering,</p>
-        <p>in Memorial University of Newfoundland</p>
-        <p>4 years of experience as a <b>Front-End Developer</b></p>
-        <p>Bachelor in Automation, Wuhan University of Technology </p>
+    <div className='name'>
+        <h1>Yi Li</h1>
+        <div className='avatar'><img src={me}></img></div>
+        
+        </div>
+        
+    <p className='descrip'> <b>Master</b> of Engineering (M. Eng), Electrical Engineering,</p>
+        <p className='descrip'>in Memorial University of Newfoundland</p>
+        <p className='descrip'>4 years of experience as a <b>Front-End Developer</b></p>
+        <p className='descrip'>Bachelor in Automation, Wuhan University of Technology </p>
 </div>
 <div className='cardItem about'>
     
@@ -27,9 +32,12 @@ const MainPage = () => {
         Academic performance
     </p>
     <p>
+        Volunteers
+    </p>
+    <p>
         Activities
     </p>
-    <Link to="/aboutMe">
+    <Link to="/AboutMe">
     <button>Read More</button>
     </Link>
 </div>

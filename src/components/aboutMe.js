@@ -2,6 +2,7 @@ import React from 'react';
 import TimeLine from './timeLine';
 import Graduate from './graduate';
 import Volunteers from './Volunteers';
+import Activity from './activities';
 import { Collapse,Col, Row, } from 'antd';
 import Header from './Header';
 import "../style/aboutMe.css"
@@ -19,8 +20,13 @@ const items = [
   },
   {
     key: '3',
-    label: 'Volunteers and Activities',
+    label: 'Volunteers',
     children: <Volunteers></Volunteers>
+  },
+  {
+    key: '4',
+    label: 'Activities',
+    children: <Activity></Activity>
   },
 ];
 const AboutMe = () => {
@@ -30,18 +36,20 @@ const AboutMe = () => {
     return <div>
       <Header></Header>
       <div className='main'>
-      <Row gutter={24}>
-    <Col xs={0} sm={2} md={4} lg={6} xl={8}>
+        <Row gutter={24}>
+    <Col xs={0} sm={2} md={2} lg={6} xl={6}>
     </Col>
-      <Col xs={24} sm={24} md={20} lg={18} xl={10}>
+      <Col xs={24} sm={20} md={20} lg={12} xl={12}>
         <div className='aboutMe'>  
-            <Collapse items={items} defaultActiveKey={['1','2','3']} onChange={onChange} />;
+            <Collapse items={items} defaultActiveKey={['1']} onChange={onChange} />
             
       </div>
-   </Col>
-   <Col xs={0} sm={2} md={4} lg={6} xl={8}>
-   </Col>
-   </Row></div></div>
+      </Col>
+      <Col xs={0} sm={2} md={2} lg={6} xl={6}>
+     </Col>
+   </Row>
+   </div>
+   </div>
     // return <div>111</div>
   
 }
