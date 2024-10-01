@@ -1,5 +1,5 @@
 import React from 'react';
-import { HomeOutlined, SolutionOutlined, MailOutlined, FundProjectionScreenOutlined,AlertOutlined } from '@ant-design/icons';
+import {  SolutionOutlined, MailOutlined, FundProjectionScreenOutlined,AlertOutlined } from '@ant-design/icons';
 import '../style/card.css'; // 从 components 目录跳到上一级再进入 style 目录
 import { Link } from 'react-router-dom';
 

@@ -1,0 +1,14 @@
+.listItem{
+    li{
+        text-align: left;
+    }
+    /* text-align: left; */
+    .itemName{
+        font-size: 15px;
+        font-weight: bold;
+    }
+    /* p{
+        text-align: left;
+
+    } */
+}

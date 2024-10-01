@@ -1,0 +1,27 @@
+.profileContainer{
+    width: 100%;
+    margin-bottom: 30px;
+    background-color:darkgray;
+    img{
+        display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    
+    
+    }
+}
+@media screen and (min-width: 768px) {
+    /* 桌面端样式 */
+    .profileContainer img {
+      height: 53vh; /* 在桌面端占据屏幕高度的1/3 */
+      width: auto;  /* 自动根据高度调整宽度，保持比例 */
+    }
+  }
+  
+  @media screen and (max-width: 767px) {
+    /* 移动端样式 */
+    .profileContainer img {
+      width: 100%; /* 在移动端，图片宽度占满屏幕宽度 */
+      height: auto; /* 高度自动调整，保持比例 */
+    }
+  }

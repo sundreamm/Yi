@@ -1,0 +1,19 @@
+.graduate{
+    padding-left: 20px;
+    text-align: left;
+
+.academicResult{
+    text-align: left;
+    img{
+    /* height: 150px; */
+    max-width: 100%;
+    }
+    
+}
+.Certifications{
+    img{
+        height: 450px;
+        max-width: 100%;
+    }
+}
+}

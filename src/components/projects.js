@@ -1,5 +1,5 @@
  import React from 'react';
-import { Divider, List, Typography } from 'antd';
+import { Divider, List } from 'antd';
 import '../style/listItem.css'
 const data = [
 

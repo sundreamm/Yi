@@ -2,7 +2,6 @@ import React from 'react';
 // import { Button } from 'antd';
 import { HomeOutlined, SolutionOutlined, MailOutlined, FundProjectionScreenOutlined,AlertOutlined } from '@ant-design/icons';
 import { Menu } from 'antd';
-import { icons } from 'antd/es/image/PreviewGroup';
 import { useLocation, Link } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 
@@ -10,7 +9,7 @@ import { useState, useEffect } from 'react';
 const items = [
   {
     label: (
-      <Link to={"/"}>
+      <Link to={"/Yi"}>
         Home
       </Link>
     ),
