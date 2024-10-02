@@ -10,7 +10,7 @@ import "../style/aboutMe.css"
 const items = [
   {
     key: '1',
-    label: 'Timeline',
+    label: 'Experience',
     children: <TimeLine></TimeLine>
   },
   {
