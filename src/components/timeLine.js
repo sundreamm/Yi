@@ -27,7 +27,7 @@ const TimeLine = () => {
           },
           {
             label: '2019 - 2022',
-            children: 'Worked at SF technology as a Front-End Developer.',
+            children: 'Worked at SF technology as a Intermediate Front-End Developer.',
           },
           {
             label: '2022.9~present',

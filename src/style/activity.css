@@ -1,0 +1,17 @@
+.activity{
+    .acItem{
+        margin-bottom: 20px;
+        .imgBox{
+padding: 15px;
+        box-shadow: 0 8px 8px rgba(0, 0, 0, 0.3); /* 添加阴影效果 */
+        border-radius: 10px;
+            text-align: center;
+        }
+        img{
+            height: 350px;
+        }
+        
+    }.oceans img{
+        height: 500px;
+    }
+}

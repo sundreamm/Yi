@@ -1,10 +1,21 @@
 .skills{
-    padding-top: 80px;
+    padding-top: 80px!important;
+    .ant-card{
+        height: 200px;
+        margin-bottom: 20px;
+    }
     .ant-card-head-title{
         font-size: 1.2rem;
         font-weight: bold;
     }
     p{
         font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .skills .ant-card{
+        height: 135px;
+        margin-bottom: 20px;
     }
 }

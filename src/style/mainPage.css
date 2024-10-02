@@ -109,7 +109,7 @@
   z-index: 30;         /* 确保遮罩在所有内容之上 */
 }
 
-@media screen and (min-width: 768px) and (max-width: 1440px){
+@media screen and (min-width: 768px) and (max-width: 1540px){
   .profileContainer{
     padding: 200px 50px;
     display: flex;

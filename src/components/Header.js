@@ -79,13 +79,13 @@ const Header = () => {
 
   return <div className='headerMenu'>
   <Row gutter={24}>
-   <Col xs={0} sm={2} md={4} lg={6} xl={7}>
+   <Col xs={0} sm={2} md={4} lg={6} xl={6}>
    </Col>
-   <Col xs={24} sm={24} md={20} lg={18} xl={10}>
+   <Col xs={24} sm={24} md={20} lg={12} xl={12}>
     <Menu onClick={onClick} selectedKeys={[current]} mode="horizontal" items={items}></Menu>
   </Col>
     </Row>
-  <Col xs={0} sm={2} md={4} lg={6} xl={7}>
+  <Col xs={0} sm={2} md={4} lg={6} xl={6}>
    </Col>
     </div>
   // <row gutter={24}>

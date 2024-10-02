@@ -1,10 +1,19 @@
 import React from 'react';
+import NECEC from '../imgs/NECEC.jpg'
+import me from '../imgs/me.png'
+import '../style/activity.css'
 
 const Activity = () => {
     
     return <div className='activity'>
-        <p>[1] Polka Dot Trot, Volunteer Assinment: Site Set-Up, 10/15/2023</p>
-        <p>[2] Core science building open house, Greeting visitors and introducing the laboratory, 03/16/2024</p>
+        <div className='acItem'>
+            <p>[1] IEEE NECEC Conference, St. John's, Canada, 2023</p>
+            <div className='imgBox'><img src={NECEC}></img></div>
+        </div>
+        <div className='acItem oceans'>
+            <p>[2] OCEANS 2024 - Halifax, Halifax, Canada, 2024</p>
+            <div className='imgBox'><img src={me}></img></div>
+        </div>
    </div>
     // return <div>111</div>
   

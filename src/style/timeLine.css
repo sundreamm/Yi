@@ -1,6 +1,19 @@
 .timeLine{
     text-align: left;
    /* padding-left: 200px; */
-   margin-left: -200px;
+   .ant-timeline-item-label{
+    font-size: 0.7rem;
+   }
+   .ant-timeline-item-label{
+    width: calc(30% - 12px)!important;
+   }
+   .ant-timeline-item-tail{
+    inset-inline-start:30%!important;
+   }
+   .ant-timeline-item-head-blue{
+    inset-inline-start: 30%!important;
+   }
+   .ant-timeline-item-content{
+   inset-inline-start: calc(30% - 4px)!important;}
 
 }

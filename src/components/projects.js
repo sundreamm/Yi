@@ -2,6 +2,7 @@
 import { Divider, List,Col, Row, } from 'antd';
 import '../style/listItem.css'
 import Header from './Header';
+import '../style/project.css'
 const data = [
 
     
@@ -32,26 +33,35 @@ const Projects = () => (
   <Row gutter={24}>
   <Col xs={0} sm={2} md={4} lg={6} xl={7}>
   </Col>
-      <Col xs={24} sm={24} md={20} lg={18} xl={10}>
-    <Divider className='listTitle' orientation="left">Projects</Divider>
-    <List  className='listItem'
-      header={<div></div>}
-    //   footer={<div>Footer</div>}
-      bordered
-      dataSource={data}
-      renderItem={(item,index) => (
-        <List.Item>
-        <List.Item.Meta
-        //   avatar={<Avatar src={`https://api.dicebear.com/7.x/miniavs/svg?seed=${index}`} />}
-          title={<a href="https://ant.design">{item.title}</a>}
-          description={item.description}
-           />
-         {item.content}
-         {index === 2 && <p>Responsible for developing and maintaining the internal component library.</p>}
-      </List.Item>
-      )}
-    />
+  <Col xs={24} sm={20} md={16} lg={12} xl={10} className='projecContainer'>
+
+    <Row gutter={24}>
+    <Col xs={1} sm={2} md={2} lg={2} xl={2}>
+    </Col>
+    <Col xs={22} sm={20} md={20} lg={20} xl={20}>
+      <Divider className='listTitle' orientation="left">Projects</Divider>
+      <List  className='listItem'
+        header={<div></div>}
+      //   footer={<div>Footer</div>}
+        bordered
+        dataSource={data}
+        renderItem={(item,index) => (
+          <List.Item>
+          <List.Item.Meta
+          //   avatar={<Avatar src={`https://api.dicebear.com/7.x/miniavs/svg?seed=${index}`} />}
+            title={<a href="https://ant.design">{item.title}</a>}
+            description={item.description}
+            />
+          {item.content}
+          {index === 2 && <p>Responsible for developing and maintaining the internal component library.</p>}
+        </List.Item>
+        )}
+      />
       </Col>
+      <Col xs={1} sm={2} md={2} lg={2} xl={2}>
+      </Col>
+      </Row>
+  </Col>
    <Col xs={0} sm={2} md={4} lg={6} xl={7}>
    </Col>
   </Row></div></div>

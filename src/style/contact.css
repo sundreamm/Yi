@@ -1,3 +1,11 @@
 .contact{
     margin-top: 30px;
+    padding: 100px;
+    background: rgba(255, 255, 255, 0.8); /* 半透明白色背景 */
+    .contactItem{
+        margin-bottom: 20px;
+    }
+    span{
+        margin-left: 10px;
+    }
 }
